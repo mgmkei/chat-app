@@ -8,34 +8,7 @@
 </div>
 
 <div class="messages">
-  <%# <div class="message">
-    <a class="message-name">Tom</a><a class="message-day">2020/3/31(Wed) 12:43:30</a>
-    <p class="message-text">おはよう</p>
-  </div>
-  <div class="message">
-    <a class="message-name">Tom</a><a class="message-day">2020/3/31(Wed) 12:43:30</a>
-    <p class="message-text">おはよう</p>
-  </div>
-  <div class="message">
-    <a class="message-name">Tom</a><a class="message-day">2020/3/31(Wed) 12:43:30</a>
-    <p class="message-text">おはよう</p>
-  </div>
-  <div class="message">
-    <a class="message-name">Tom</a><a class="message-day">2020/3/31(Wed) 12:43:30</a>
-    <p class="message-text">おはよう</p>
-  </div>
-  <div class="message">
-    <a class="message-name">Tom</a><a class="message-day">2020/3/31(Wed) 12:43:30</a>
-    <p class="message-text">おはよう</p>
-  </div>
-  <div class="message">
-    <a class="message-name">Tom</a><a class="message-day">2020/3/31(Wed) 12:43:30</a>
-    <p class="message-text">おはよう</p>
-  </div>
-  <div class="message">
-    <a class="message-name">Tom</a><a class="message-day">2020/3/31(Wed) 12:43:30</a>
-    <p class="message-text">おはよう</p>
-  </div> %>
+  <%= render partial: 'message', collection: @messages %>
 </div>
 
 <%= form_with model: [@room, @message], html: {class: "form"}, local: true do |f|%>
