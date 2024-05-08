@@ -2,5 +2,6 @@
   <div class="message">
     <a class="message-name"><%= message.user.name %></a><a class="message-day"><%=l message.created_at %></a>
     <p class="message-text"><%= message.content %></p>
+    <%= image_tag message.image.variant(resize: '500x500'), class: 'message-image' if message.image.attached? %>
   </div>
 </div>
